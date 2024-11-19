@@ -1,0 +1,17 @@
+Note
+
+to run the code you need to first set up flask
+
+run pre_tf.py first it will generate small_vector.csv
+
+we didnot upload small_vector.csv because its size is too large
+
+run file1.py
+
+the website is ready you will see login page
+
+enter any username buyer0 ,buyer1,buyer2 ..till buyer19999
+
+enter any password buyer0 ,buyer1,buyer2 ..till buyer19999
+
+GOOD LUCK!

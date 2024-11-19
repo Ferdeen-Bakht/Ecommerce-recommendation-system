@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-white px-3" style="background-color: rgb(236, 236, 236);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Flipkart</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center-md">
+              <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link active" href="#" aria-current="page">HOME</a>
+              </li>
+              <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">PRODUCTS</a>
+              </li>
+              <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">MY ORDERS</a>
+              </li>
+              <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">CART <sup><span class="badge bg-dark rounded-pill" style="font-size: x-small;">5</span></sup></a>
+              </li>
+              <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">ACCOUNT</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link" href="#">SIGN UP</a>
+              </li>
+              <li class="nav-item" style="margin-left: 30px;">
+                <a class="nav-link btn rounded-0" href="#" style="background-color: rgb(255, 206, 44);">BECOME A SELLER</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <form action="" method="get">
+        <div class="container d-flex mt-4">
+          <div class="card mx-4 border-0" style="width: 65%; height: fit-content;">
+            <div class="cart-header d-flex justify-content-between">
+              <h2>Shopping Cart</h2>
+              <span class="btn btn-danger rounded-0 mb-1" id="remove-all-btn">Remove all</span>
+            </div>
+            <div class="form-check mb-4" id="selectallWithLabel">
+              <input class="form-check-input" type="checkbox" value="" id="select-all-checkbox">
+              <label class="form-check-label" for="select-all-checkbox">
+                Select All
+              </label>
+            </div>
+            <!-- This is a outer class of items that is a container that represents all cart items we will add all cart items in it -->
+            <div class="items border border-1 p-4" id="cart-items">
+                <!-- row represent cart items and their columns represents the price, description etc -->
+              <div class="row d-flex align-items-center">
+                <div class="col-1">
+                  <div class="form-check">
+                    <input class="form-check-input cart-checkbox" type="checkbox" value="" id="">
+                  </div>
+                </div>
+                <div class="col-5">
+                  <h5 class="mb-0">White T-Shirt</h5>
+                  <p>Size: medium</p>
+                </div>
+                <div class="col-3">
+                  <input class="form-control w-50 cart-item-quantity" type="number" name="" id="" value="1">
+                </div>
+                <div class="col-3 text-end">
+                    <!-- hardcoded values -->
+                  <h3 class="cart-item-price">Rs. 580</h3>
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col-1">
+                  <div class="form-check">
+                    <input class="form-check-input cart-checkbox" type="checkbox" value="" id="">
+                  </div>
+                </div>
+                <div class="col-5">
+                  <h5 class="mb-0">White T-Shirt</h5>
+                  <p>Size: medium</p>
+                </div>
+                <div class="col-3">
+                  <input class="form-control w-50 cart-item-quantity" type="number" name="" id="" value="1">
+                </div>
+                <div class="col-3 text-end">
+                    <!-- hardcoded values -->
+                  <h3 class="cart-item-price">Rs. 580</h3>
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col-1">
+                  <div class="form-check">
+                    <input class="form-check-input cart-checkbox" type="checkbox" value="" id="">
+                  </div>
+                </div>
+                <div class="col-5">
+                  <h5 class="mb-0">White T-Shirt</h5>
+                  <p>Size: medium</p>
+                </div>
+                <div class="col-3">
+                  <input class="form-control w-50 cart-item-quantity" type="number" name="" id="" value="1">
+                </div>
+                <div class="col-3 text-end">
+                    <!-- hardcoded values -->
+                  <h3 class="cart-item-price">Rs. 580</h3>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- This is the right card that represent the total amount of the items and total items -->
+          <div class="card rounded-0 border-0 shadow-sm" style="width: 35%; height: 270px;">
+            <div class="card-header border-0 rounded-0">
+              <div class="lead">CHECKOUT ITEMS</div>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between">
+                <h6>Total Items:</h6>
+                <h6 id="total-items">0</h6>
+              </div>
+              <div class="card-text d-flex justify-content-between">
+                <h6>Subtotal:</h6>
+                <h6 id="subtotal">Rs. 0</h6>
+              </div>
+              <div class="card-text d-flex justify-content-between">
+                <h6>Delivery Charges:</h6>
+                <h6 id="delivery-charges">Rs. 0</h6>
+              </div>
+              <hr>
+              <div class="card-text d-flex justify-content-between">
+                <h5>Grand Total:</h5>
+                <h5 id="grand-total">Rs. 0</h5>
+              </div>
+              <input class="btn w-100 rounded-0 py-2" style="background-color: rgb(255, 206, 44);" type="submit" value="CHECKOUT">
+            </div>
+          </div>
+        </div>
+      </form>
+      
+  </main>
+  
+  <script>
+    const cartItems = document.getElementById('cart-items');
+    const selectAllCheckbox = document.getElementById('select-all-checkbox');
+    const selectAllCheckboxLabel = document.getElementById('selectallWithLabel');
+    // Getting all checkboxes with class .cart-checkboxe
+    const cartCheckboxes = document.querySelectorAll('.cart-checkbox');
+    const cartItemQuantities = document.querySelectorAll('.cart-item-quantity');
+    const cartItemPrices = document.querySelectorAll('.cart-item-price');
+    const removeAllBtn = document.getElementById('remove-all-btn');
+    const totalItems = document.getElementById('total-items');
+    const subtotal = document.getElementById('subtotal');
+    const deliveryCharges = document.getElementById('delivery-charges');
+    const grandTotal = document.getElementById('grand-total');
+
+    // This function is called many times after checking checkboxes or uncheck the boxes beacuse this calculates the updated total items, subtotal, delivery charges and grand total every time
+    function calculateTotal() {
+    let totalQuantity = 0;
+    let totalAmount = 0;
+    // Iterating over all the checkboxes of cart items
+    for (let i = 0; i < cartCheckboxes.length; i++) {
+        // Checking if the current checkbox checked if True then
+        if (cartCheckboxes[i].checked) {
+            //We get the input type number of every cart that represent the quantity of each item and we are maintaining a sum of quantity in totalQuantity
+            totalQuantity += Number(cartItemQuantities[i].value);
+            //totalAmount represnet the subtotal amount of each item and sum of all the items by multiplying quantity and price of item, every time
+            //slice(4) eliminates Rs.space it only returns price value
+            totalAmount += Number(cartItemQuantities[i].value) * Number(cartItemPrices[i].innerText.slice(4));
+        }
+    }
+    //checking if totalQuantity if greater than 0 then the delivery charges would be taken
+    if (totalQuantity>0){
+        deliveryCharge = 100;
+    }
+    else{
+        deliveryCharge = 0;
+    }
+    //grandtotal variable made, it stores subtotal and delivery charges
+    let grandtotal = totalAmount + deliveryCharge;
+    totalItems.innerText = totalQuantity;
+    subtotal.innerText = `Rs. ${totalAmount}`;
+    deliveryCharges.innerText = `Rs. ${deliveryCharge}`;
+    grandTotal.innerText = `Rs. ${grandtotal}`;
+    }
+
+
+// if we click on select all checkbox it would change the inner function immediately
+selectAllCheckbox.addEventListener('change', function () {
+    //for every check box of cart items we are also make them checked if select all checkbox clicked
+  for (let i = 0; i < cartCheckboxes.length; i++) {
+    //it would assign each cart item checkbox state to the state of selectall checkbox.
+    //e.g if selectall checkbox is checked then each of the cart item checkbox would also be checked else it would be unchecked
+    cartCheckboxes[i].checked = selectAllCheckbox.checked;
+  }
+  calculateTotal();
+});
+
+// Add event listener to individual checkboxes
+for (let i = 0; i < cartCheckboxes.length; i++) {
+  cartCheckboxes[i].addEventListener('change', function () {
+    // checking if all individual checkbox checcked then we would also checked the selectAll checkbox
+    let allChecked = true;
+    for (let j = 0; j < cartCheckboxes.length; j++) {
+      if (!cartCheckboxes[j].checked) {
+        allChecked = false;
+        break;
+      }
+    }
+    selectAllCheckbox.checked = allChecked;
+    calculateTotal();
+  });
+}
+
+// Add event listener to quantity inputs
+for (let i = 0; i < cartItemQuantities.length; i++) {
+  cartItemQuantities[i].addEventListener('input', function () {
+    calculateTotal();
+  });
+}
+
+// Add event listener to remove all button
+removeAllBtn.addEventListener('click', function () {
+//   cartItems.innerHTML = '';
+  cartItems.remove();
+  selectAllCheckboxLabel.style.display = 'none';
+  for (let i = 0; i < cartCheckboxes.length; i++) {
+    if (cartCheckboxes[i].checked) {
+        cartCheckboxes[i].checked = false;
+    }
+  }
+  calculateTotal();
+});
+
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
