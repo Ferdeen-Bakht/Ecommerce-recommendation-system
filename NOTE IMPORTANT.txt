@@ -2,6 +2,8 @@ Note
 
 to run the code you need to first set up flask
 
+download and rename this file as sample.csv https://www.kaggle.com/datasets/atharvjairath/flipkart-ecommerce-dataset
+
 run pre_tf.py first it will generate small_vector.csv
 
 we didnot upload small_vector.csv because its size is too large
